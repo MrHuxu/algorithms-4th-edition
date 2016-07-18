@@ -12,4 +12,5 @@
 
 (defn delete
   [head k]
-  )
+  (let [front []]
+    (for [x (range k)] (let [front (conj front :next)]))))
