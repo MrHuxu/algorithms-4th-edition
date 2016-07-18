@@ -12,5 +12,12 @@
 
 (defn delete
   [head k]
-  (let [front []]
-    (for [x (range k)] (let [front (conj front :next)]))))
+  (let [result nil tail nil]
+    (loop [x 1]
+      (when (< x k)
+        (let [result (:next head)] (println result))
+        (recur (+ x 1))))
+    (println result)))
+
+
+(delete a 3)
