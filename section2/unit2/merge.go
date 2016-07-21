@@ -33,7 +33,7 @@ func merge(nums []int, lo int, mid int, hi int) {
 
 func main() {
 	var nums []int
-	nums = append(nums, 4, 3, 2, 1, 4, 2)
-	merge(nums, 0, 3, 5)
+	nums = append(nums, 4, 3, 2)
+	merge(nums, 0, 1, 2)
 	fmt.Println(nums)
 }
